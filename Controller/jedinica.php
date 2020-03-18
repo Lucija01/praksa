@@ -1,13 +1,14 @@
-<?php
- 
-require_once ('../Model/Podaci.php');
- 
- 
-if ($_GET["app"]=="apartman1")
-{
- return "Apartman1";
+<?php 
+require_once ('../Model/Podaci.php'); 
+$jedinicaId = $_GET['ap'] ?? '';
+$jedinice= $jsonData->objekt->jedinice;//array
+$jediniceIdevi = []; 
+foreach ($jedinice as $jedinica) {
+	$jediniceIdevi[] = $jedinica->id;
 }
-if ($_GET["app"]=="apartman2"){
-   return "Apartman2";
-}
-
+if (!in_array($jedinicaId, $jediniceIdevi)) {
+	echo "NEPOZNATA JEDINICA";
+	exit;
+};
+$data=$jsonData->objekt->jedinice[($jedinicaId-1)];
+require_once ('../View/jedinica.php');

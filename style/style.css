@@ -1,45 +1,133 @@
- header h1{
-     text-align: center;    
-    
- }
- body{
-	font-size: 20px;
-  	height: 200px;
-  	width: 50%;
-  	margin: auto;
-  	padding: 10px;
- }
- header{
-  	background-color: lightblue;
- }
-table, th, td {
-	padding: 15px;
-	text-align: left;
-	border-bottom: 1px solid #ddd;
-  }
-th{
-	color: #4CAF50;
+header h1 {
+  text-align: center;
+}
+
+body {
+  font-size: 20px;
+  height: 200px;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+
+header {
+  background-color: lightblue;
+}
+
+table,
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background-color:rgb(229, 226, 226);
+}
+
+th {
+  color: rgb(12, 100, 15);
+}
+
+* {
+  margin-top: 0;
+}
+
+p {
+  background-color: rgb(226, 226, 122);
+  border: 1px solid black;
+  padding: 10px;
+  width: 70%;
+  height: auto;
+  text-align: center;
+}
+
+header img {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: 3%;
+  margin-top: 1%;
+  background-color: lightblue;
 }
 
  
-*{
-	margin-top: 0;
+
+.ui-datepicker-prev span.ui-icon {
+  background-color: green !important;
+     
+}
+
+.ui-datepicker-next span.ui-icon {
+  background-color: greenyellow !important;
+      
+}
+
+.ui-datepicker .ui-datepicker-header {
+ background-color: yellow!important;
+}
+
+.month {
+ 
+  width: 100%;
+  background-color:rgb(229, 226, 226);
+  text-align: center;
+}
+
+.month ul {
+  width:80%;
+ 
  
 }
-p{
 
-    background-color: rgb(226, 226, 122);
-    border: 1px solid black;
-    padding: 10px;
-    width: 70%;
-    height: auto;
-    text-align: center;
- } 
-  header img{
+.column{
 
-    display:inline-block;
-    margin-right: auto;
-    margin-left: 3%;
-    margin-top:1%;
-    background-color: lightblue;
-  }
+  float: left;
+  width:33%;
+ 
+}
+.month::after{
+content: "";
+clear: both;
+display: table;
+}
+
+.month ul li {
+  width:30%;
+  height:30%;
+  color: grey;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+ 
+}
+
+
+.days {
+  float: left;
+  width: 5%;
+  padding: 5px;
+  background:white;
+  margin: 0;
+
+}
+
+.days li {
+  
+  list-style-type: none;
+  display: inline-block;
+  width: 3%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: white;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+.days li .false {
+  padding: 5px;
+  background: #da3c3c;
+  color: white !important
+}

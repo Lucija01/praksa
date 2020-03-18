@@ -1,52 +1,27 @@
-<?php
-	require_once ('../Model/Podaci.php');
- ?>
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html  lang="en">
-<head>
-  <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <title><?=$json_data->title ?></title>
-</head>
-
-
-<body> 
-    <header>
-         <img src="<?=$json_data->logo[0] ?>",alt="<?=$json_data->logo[1] ?>"> <h1> <?=$json_data->naslov ?> </h1> 
-    </header>
-
-    <div class="slike">
- <?php 
-           for ($x = 0; $x < 3; $x++) {
-                for ($y = 0; $y <= 2; $y++) { 
-                       $src= $json_data->slike[$x][$y];
-                         $y++;
-                       $alt= $json_data->slike[$x][$y];
-                          $y++;
-                      $title=$json_data->slike[$x][$y];
-                     echo"<img src=$src,alt=$alt,title=$title>";
-                                              }
-   
-                                        }
- ?>
-    </div>  
-       
-    <p><?=$json_data->opis ?></p>
-
-    <br>
-    <h3> <?=$json_data->mali_naslov ?></h3>
-
-    <p >
-        <a href=" <?=$json_data->APP1[0] ?>" > <?=$json_data->APP1[1] ?></a>
-        <a href=" <?=$json_data->APP2[0] ?>"> <?=$json_data->APP2[1] ?></a>
-    </p>
-
-</body>
- 
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../second/style/style.css">
+        <title><?=$glavnaStranica->title ?></title>
+    </head>
+    <body> 
+        <header>
+            <img src="<?=$glavnaStranica->logo->url ?>" alt="<?=$glavnaStranica->logo->altText ?>"> 
+            <h1><?=$glavnaStranica->naslov ?></h1> 
+        </header>
+        <div class="slike">
+            <?php foreach ($glavnaStranica->slike as $slika) :?>
+                <img src="<?= $slika->url ?>" alt="<?= $slika->altText  ?>"  title="<?= $slika->titleText  ?>">
+            <?php endforeach ?>        
+        </div>       
+        <p><?=$glavnaStranica->opis ?></p>
+        <br>
+        <h3>Opis smjestaja</h3>
+        <p>
+            <?php foreach ($jedinice as $jedinica) :?>
+                <a href="../second/Controller/jedinica.php/?ap=<?= $jedinica->id ?>"><?=$jedinica->nazivJedinice?></a>
+            <?php endforeach ?> 
+        </p>
+    </body>
 </html>
-
-
-
-
- 
