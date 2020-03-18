@@ -1,0 +1,45 @@
+ header h1{
+     text-align: center;    
+    
+ }
+ body{
+	font-size: 20px;
+  	height: 200px;
+  	width: 50%;
+  	margin: auto;
+  	padding: 10px;
+ }
+ header{
+  	background-color: lightblue;
+ }
+table, th, td {
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+  }
+th{
+	color: #4CAF50;
+}
+
+ 
+*{
+	margin-top: 0;
+ 
+}
+p{
+
+    background-color: rgb(226, 226, 122);
+    border: 1px solid black;
+    padding: 10px;
+    width: 70%;
+    height: auto;
+    text-align: center;
+ } 
+  header img{
+
+    display:inline-block;
+    margin-right: auto;
+    margin-left: 3%;
+    margin-top:1%;
+    background-color: lightblue;
+  }
