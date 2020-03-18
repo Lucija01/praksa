@@ -1,4 +1,4 @@
 <?php
  
-require_once('../second/Controller/object.php');
+require_once('../praksa/Controller/object.php');
  

@@ -2,7 +2,7 @@
 <html  lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="../second/style/style.css">
+        <link rel="stylesheet" type="text/css" href="../praksa/style/style.css">
         <title><?=$glavnaStranica->title ?></title>
     </head>
     <body> 
@@ -20,7 +20,7 @@
         <h3>Opis smjestaja</h3>
         <p>
             <?php foreach ($jedinice as $jedinica) :?>
-                <a href="../second/Controller/jedinica.php/?ap=<?= $jedinica->id ?>"><?=$jedinica->nazivJedinice?></a>
+                <a href="../praksa/Controller/jedinica.php/?ap=<?= $jedinica->id ?>"><?=$jedinica->nazivJedinice?></a>
             <?php endforeach ?> 
         </p>
     </body>
