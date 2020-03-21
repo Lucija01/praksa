@@ -120,7 +120,7 @@ display: table;
   color: white;
 }
 
-.days li .active {
+.days li .true {
   padding: 5px;
   background: #1abc9c;
   color: white !important

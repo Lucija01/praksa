@@ -58,23 +58,6 @@ $json = '{
                 "naslov2": "Opis smjestaja",
                 "opis": "Apartman može primiti 5 gostiju. Ležajevi su raspoređeni u spavaćim sobama kojih ima 2, te u dnevnom boravku, unutar 57m2.<br> Gostima je na raspolaganju vlastiti balkon za uživanje u toplim ljetnim večerima. Dozvoljeno je pripremati hranu korištenjem zajedničkog roštilja.",
                 "maliNaslov": "Cjenik",
-                "table": {
-                    "prva_tabla": [
-                        "broj osoba",
-                        "1.7-1.9",
-                        "1.1-1.7"
-                    ],
-                    "druga_tabla": [
-                        "3",
-                        "77€",
-                        "32€"
-                    ],
-                    "treca_tabla": [
-                        "5",
-                        "22€",
-                        "44€"
-                    ]
-                },
                 "Home": {
                     "homeLink": "../../index.php",
                     "homeNaziv": "Home"
@@ -109,23 +92,6 @@ $json = '{
                 "naslov2": "Opis smjestaja",
                 "opis": "Apartman može primiti 3 gostiju. Ležajevi su raspoređeni u spavaćim sobama kojih ima 1, te u dnevnom boravku, unutar 38m2.<br> Gosti mogu uživati u pogledu na more sa vlastite terase. Dozvoljeno je pripremati hranu korištenjem zajedničkog roštilja.",
                 "maliNaslov": "Cjenik",
-                "table": {
-                    "prva_tabla": [
-                        "broj osoba",
-                        "1.7-1.9",
-                        "1.1-1.7"
-                    ],
-                    "druga_tabla": [
-                        "4",
-                        "55€",
-                        "26€"
-                    ],
-                    "treca_tabla": [
-                        "24",
-                        "23€",
-                        "32€"
-                    ]
-                },
                 "Home": {
                     "homeLink": "../../index.php",
                     "homeNaziv": "Home"
